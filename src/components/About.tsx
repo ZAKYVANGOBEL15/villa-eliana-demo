@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import villaInteriorImage from '../assets/images/villa_interior_1780773392194.png';
 
 export default function About() {
   const specs = [
@@ -61,7 +62,7 @@ export default function About() {
               className="relative z-10 overflow-hidden shadow-2xl h-[400px] md:h-[550px]"
             >
               <img
-                src="/src/assets/images/villa_interior_1780773392194.png"
+                src={villaInteriorImage}
                 alt="Villa Eliana Living Spaces"
                 className="w-full h-full object-cover transform duration-1000 hover:scale-105"
                 referrerPolicy="no-referrer"

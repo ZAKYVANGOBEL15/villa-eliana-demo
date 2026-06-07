@@ -3,6 +3,13 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronLeft, ChevronRight, Maximize2, Layers, Tag, Eye } from 'lucide-react';
 import { GalleryImage } from '../types';
 
+import imgHeroVilla from '../assets/images/hero_villa_1780773373939.png';
+import imgVillaInterior from '../assets/images/villa_interior_1780773392194.png';
+import imgVillaBedroom from '../assets/images/villa_bedroom_1780773407332.png';
+import imgVillaPool from '../assets/images/villa_pool_1780773422607.png';
+import imgVillaGarden from '../assets/images/villa_garden_1780773525174.png';
+import imgVillaBathroom from '../assets/images/villa_bathroom_1780773539840.png';
+
 export default function InteractiveGallery() {
   const [activeFilter, setActiveFilter] = useState<'all' | 'exterior' | 'interior' | 'wellness'>('all');
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -12,7 +19,7 @@ export default function InteractiveGallery() {
       id: '1',
       title: 'Monolith Vulkanik',
       category: 'exterior',
-      imageUrl: '/src/assets/images/hero_villa_1780773373939.png',
+      imageUrl: imgHeroVilla,
       description: "Struktur arsitektur utama Villa Eliana di Wailan, dirancang dengan paduan beton ekspos serta garis kaca minimalis tanpa sekat yang menghadap langsung ke arah Gunung Lokon.",
       details: ['Beton ekspos khusus', 'Dek panorama menghadap barat', 'Taman rumput dataran tinggi']
     },
@@ -20,7 +27,7 @@ export default function InteractiveGallery() {
       id: '2',
       title: 'Lounge Utama Senggang',
       category: 'interior',
-      imageUrl: '/src/assets/images/villa_interior_1780773392194.png',
+      imageUrl: imgVillaInterior,
       description: 'Ruang komunal utama yang memiliki panel kaca tinggi dari lantai ke langit-langit, menghadap ke jajaran perbukitan pinus Tomohon.',
       details: ['Panel dinding kayu solid', 'Kaca kedap suara Low-E', 'Sofa linen minimalis premium']
     },
@@ -28,7 +35,7 @@ export default function InteractiveGallery() {
       id: '3',
       title: 'Master Suite Lokon',
       category: 'interior',
-      imageUrl: '/src/assets/images/villa_bedroom_1780773407332.png',
+      imageUrl: imgVillaBedroom,
       description: 'Kamar utama privat yang dilengkapi kain organik pilihan, partisi kayu jati geser, serta balkon pribadi menghadap kabut pegunungan Tomohon.',
       details: ['Linen alami 100% Belgian flax', 'Rangka ranjang kayu jati custom', 'Sistem penghangat lantai terintegrasi']
     },
@@ -36,7 +43,7 @@ export default function InteractiveGallery() {
       id: '4',
       title: 'Bak Jacuzzi Geotermal',
       category: 'wellness',
-      imageUrl: '/src/assets/images/villa_pool_1780773422607.png',
+      imageUrl: imgVillaPool,
       description: 'Kolam rendam air panas alami outdoor yang diletakkan kokoh di atas dek batu basalt, menjaga kehangatan ideal bersuhu 39°C.',
       details: ['Paving basalt gelap lokal', 'Pompa hidro geothermal', 'Menghadap ke jurang lembah berkabut']
     },
@@ -44,7 +51,7 @@ export default function InteractiveGallery() {
       id: '5',
       title: 'Taman Bunga Senja',
       category: 'exterior',
-      imageUrl: '/src/assets/images/villa_garden_1780773525174.png',
+      imageUrl: imgVillaGarden,
       description: 'Teras bunga yang dikurasi cermat merepresentasikan kekayaan botani Tomohon, diterangi pencahayaan temaram sepanjang jalan setapak.',
       details: ['Taman anggrek lokal terpilih', 'Jalan setapak batu alam teratur', 'Pencahayaan atmosferik minimalis']
     },
@@ -52,7 +59,7 @@ export default function InteractiveGallery() {
       id: '6',
       title: 'Bak Mandi Batu Kali',
       category: 'wellness',
-      imageUrl: '/src/assets/images/villa_bathroom_1780773539840.png',
+      imageUrl: imgVillaBathroom,
       description: 'Kamar mandi utama mewah yang memiliki bak berendam pahatan dari sebuah batu sungai vulkanik utuh, berlatar pemandangan hutan pakis murni.',
       details: ['Bak mandi batu sungai vulkanik', 'Kran kuningan antik', 'Panel kanopi anggrek privat']
     }

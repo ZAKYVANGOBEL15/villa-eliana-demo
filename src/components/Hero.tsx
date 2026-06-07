@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Compass, Thermometer, Wind, ArrowDown } from 'lucide-react';
+import heroVillaImage from '../assets/images/hero_villa_1780773373939.png';
 
 interface HeroProps {
   onScrollTo: (sectionId: string) => void;
@@ -16,7 +17,7 @@ export default function Hero({ onScrollTo }: HeroProps) {
           transition={{ duration: 2.2, ease: [0.16, 1, 0.3, 1] }}
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url('/src/assets/images/hero_villa_1780773373939.png')`,
+            backgroundImage: `url(${heroVillaImage})`,
           }}
         />
         {/* Soft, custom gradient mask and blurs */}

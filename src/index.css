@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@300;400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-luxury-gold: #B59F84;
+  --color-luxury-gold-light: #CBB9A3;
+  --color-luxury-gold-dark: #8C7862;
+  --color-luxury-dark: #1A1A1A;
+  --color-luxury-slate: #2D2A26;
+  --color-luxury-cream: #F9F7F4;
+  --color-luxury-sand: #EFECE8;
+  --color-luxury-clay: #706F6C;
+}
+
+/* Custom styles for luxury touch and smooth animations */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-luxury-cream);
+    color: var(--color-luxury-dark);
+  }
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: var(--color-luxury-cream);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: var(--color-luxury-gold);
+    border-radius: 3px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: var(--color-luxury-gold-dark);
+  }
+}
+
+/* Luxury card outline / hover effect */
+.luxury-border {
+  position: relative;
+}
+
+.luxury-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(181, 159, 132, 0.2);
+  pointer-events: none;
+  transition: border-color 0.5s ease;
+}
+
+.luxury-border:hover::after {
+  border-color: rgba(181, 159, 132, 0.7);
+}
+
+/* Custom text glass blur */
+.glass-panel {
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(249, 247, 244, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(181, 159, 132, 0.15);
+}

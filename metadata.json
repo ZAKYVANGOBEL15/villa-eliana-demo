@@ -1,0 +1,6 @@
+{
+  "name": "Villa Eliana",
+  "description": "Minimalist luxury villa in Wailan, Tomohon featuring interactive galleries and stunning Mount Lokon views.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
